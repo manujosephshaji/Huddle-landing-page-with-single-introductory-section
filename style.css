@@ -1,0 +1,159 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Violet);
+    background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.puchline {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    font-family: 600;
+    font-size: 1.5rem;
+}
+
+.product-bio {
+    padding: 3% 5%;
+    color: white;
+}
+
+.disc {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    line-height: 24px;
+    font-size: 1rem;
+    padding-bottom: 10%;
+}
+
+.btn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 24px;
+    font-size: 18px;
+    width: 10rem;
+    padding: 10px;
+    color: var(--Violet);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background-color: var(--softMagenta);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    scale: 1.1;
+}
+
+.btn:active {
+    scale: 1.2;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-right: 40px;
+    
+}
+
+.social-links a {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 8px;
+    width: 37px;
+    height: 39px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.social-links a:hover,
+i:hover {
+    background-color: var(--softMagenta);
+}
+.attribution{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media(max-width:900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .puchline {
+        text-align: center;
+        display: flex;
+        padding-left: 0%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .disc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 14rem;
+    }
+
+}
